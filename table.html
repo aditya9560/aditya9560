@@ -1,0 +1,116 @@
+<!doctype HTML>
+<html>
+<head>
+<title>Table</title>
+<body bgcolor="lightgrey">
+<h1 style="background-color:DodgerBlue;"> &nbsp;&nbsp;COMPANY DATA </h1>
+</head>
+<style>
+
+@keyframes show
+{
+from{opacity:0}
+to{opacity:1}
+}
+
+
+.mystyle table
+{
+width:100%;
+
+
+}
+
+
+body{ 
+text-align:center;
+ }
+.mystyle
+{
+width:70%;
+margin:auto;
+
+}
+.mystyle table td{color:#cce6ff; 
+font-size:17px; 
+font-family:times new roman; 
+transition:0.15s; 
+}
+
+
+.mystyle table td:hover 
+{
+cursor:pointer;
+background:#00264d;
+border:2px cyan solid;
+opacity:0.99;
+
+
+}
+
+.mystyle table tr:hover
+{
+background:#800000;
+opacity:0.76;
+transition:0.50s;
+transform:scale(1.1);
+}
+
+
+
+table {
+  
+opacity:1;
+    animation: show 2s linear;
+
+
+}
+
+body {
+  background-image: url("images/tablebg.jpg");
+  background-size: cover;
+}
+
+
+
+</style>
+
+
+<body>
+<div class="mystyle">
+<table  border="3" cellpadding="10" cellspacing="2" bgcolor="#4747d1" >
+
+<caption style="background:#5500ff; text-transform:uppercase;
+font-family:Arial black;color:#ddccff; font-size:20px;"> Student Marks</caption>
+
+<tr>
+<th>EmployeeID</th><th>Name</th><th>phoneNo</th><th>Dept</th><th>Position</th>
+</tr>
+
+<tr>
+<td>4562</td><td>Aman</td><td>9586596425</td><td>Finance</td><td>Manager</td>
+</tr>
+
+<tr>
+<td>8612</td><td>Rohit</td><td>9578641535</td><td>HR</td><td>Assistant</td>
+</tr>
+
+<tr>
+<td>5564</td><td>Deepak</td><td>9578541535</td><td>Administration</td><td>Supervisor</td>
+</tr>
+
+<tr>
+<td>9864</td><td>Amit</td><td>8567145362</td><td>Marketing</td><td>Analyst</td>
+</tr>
+
+<tr>
+<td>5721</td><td>Vinay</td><td>8627319447</td><td>Production</td><td>Manager</td>
+</tr>
+
+<tr>
+<td>9765</td><td>Sumit</td><td>9632758467</td><td>Sales</td><td>Manager</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

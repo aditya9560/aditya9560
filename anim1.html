@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Animation</title>
+
+</head>
+
+<style>
+
+@keyframes show
+{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+
+#head {
+  margin-top: 3%;
+  margin-left: 45%;
+  margin-bottom: 5%;
+
+  border: 1px solid black;
+  border-radius: 45%;
+  width: 200px;
+  height: 100px;
+ text-align: center;
+  background-color: blue;
+  color: white;
+  
+  animation: a1 5s infinite alternate, show 1s linear;
+opacity:1;
+
+}
+
+@keyframes a1 {
+  
+  50% {transform: rotate(360deg);}
+  from {background-color: blue;}
+  to {background-color: darkcyan;}
+ 
+  
+
+}
+
+
+
+
+body  {
+  background-image: url("images/game.jpg");
+  
+}
+
+@keyframes tani
+{
+from{left:0px;}
+to{left:-2000px;}
+}
+
+#bg
+{
+width:90%;
+height:100%;
+background-image:url(images/aniboxbg.gif);
+margin:auto;
+background-size:cover;
+border:10px lightblue outset;
+overflow:hidden;
+animation:bg 10s infinite alternate, show 1s linear;
+opacity:1;
+
+}
+
+#tani
+{
+position:relative;
+color:white;
+font-size:30px;
+font-family:times new roman;
+text-transform:capitalize;
+background:rgba(10,10,90,70%);
+padding:15px;
+margin-top:500px;
+width:3000px;
+text-align:left;
+height:40px;
+left:0px;
+animation:tani 15s infinite linear alternate;
+}
+
+</style>
+
+<div id="head">
+  <h1>ANIMATION</h1>
+</div>
+
+<div id="bg">
+
+
+<div id="tani">
+<blink>Gaming can promote cognitive growth. Games can provide puzzles and challenges that players must figure out and overcome.</blink> </div>
+</div>
+</body>
+</html>

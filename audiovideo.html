@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head> <title>Media </title>
+<style>
+@keyframes show
+{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+
+html{
+animation: show 2s}
+
+body {
+ background-image: url("images/mediabg.jpg");
+ background-color: #cccccc;
+ background-position: center;
+ background-size: cover;
+}
+
+h1 {
+  color:white;
+  background-color: darkcyan;
+}
+</style>
+<body>
+<div>
+<h1>AUDIO & VIDEO in HTML</h1>
+<div>
+<video controls width="500" height="500" autoplay loop muted>
+<source src="video/v1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</DIV>
+<DIV>
+<audio controls  autoplay loop muted>
+<source src="audio/a1.mp3" type="audio/mp3">
+Your browser does not support the audio tag.
+</audio>
+</div>
+</body>
+</html>

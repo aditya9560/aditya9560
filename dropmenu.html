@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head><title>Working with animation</title>
+</head>
+<style>
+@keyframes show
+{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+html{opacity:1;
+animation: show 1s linear;}
+
+body{background-image: url("images/dropmenubg.jpg");background-size: cover;}
+
+#homemenu
+{
+text-align:center;
+padding:1px;
+background:#b3b3ff;
+}
+
+#homemenu ol
+{
+list-style:none;
+margin-left:0px;
+}
+
+#homemenu ol li
+{
+text-align:left;
+margin-left:-35px;
+padding:0px;
+padding:10px;
+border-bottom:3px black inset;
+}
+#homemenu li:hover
+{
+background:#ff8080;
+padding:10px;
+}
+#homemenu ol li a{text-decoration:none;}
+
+#home{text-align:center; postion:relative; top:0px; left:10px ;color:white;width:120px ;height:20px;box-shadow:5px 5px 5px cyan;background:darkblue;cursor:pointer;float:left;overflow:hidden;}
+
+#product{text-align:center;postion:relative;top:0px;left:10px; color:white;width:100px; height:20px;box-shadow:5px 5px 5px cyan;background:darkblue;cursor:pointer;float:left;}
+
+
+#services{text-align:center;postion:relative;top:0px;left:10px; color:white;width:100px ;height:20px;box-shadow:5px 5px 5px cyan;background:darkblue;cursor:pointer;float:left;}
+
+
+#about{text-align:center;postion:relative;top:0px;left:10px ;color:white;width:100px ;height:20px;box-shadow:5px 5px 5px cyan;background:darkblue;cursor:pointer;float:left;}
+
+
+#home:hover{transition:0.50s;overflow:visible;}
+#product:hover{transition:0.50s;height:400px;}
+#services:hover{transition:0.50s;height:400px;}
+#about:hover{transition:0.50s;height:400px;}
+
+
+</style>
+<body>
+
+
+<div id="home">home
+<div id="homemenu">
+<ol>
+<li><a href="https://www.rockstargames.com/">ROCKSTAR GAMES</a></li>
+<li><a href="https://www.ea.com/"> ELECTRONIC ARTS</a></li>
+<li><a href="https://www.gameloft.com/">GAMELOFT </a></li>
+<li><a href="https://www.activision.com/?utm_source=404&utm_medium=redirect&utm_campaign=122222">ACTIVISION</a></li>
+<li><a href="https://www.konami.com/en/">KONAMI</a></li>
+
+</ol>
+</div>
+</div>
+
+<div id="product">product</div>
+<div id="services">services</div>
+<div id="about">about</div>
+
+</body>
+</html>

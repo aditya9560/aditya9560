@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head><title>GAMING BANNER</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<h1 style="background-color:powderblue;">GAMING GIF</h1>
+
+<style>
+@keyframes show
+{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+html{opacity:1;
+animation: show 1s linear;}
+
+body {
+ background-image: url("images/gifbannerbg.jpg");
+ background-color: #cccccc;
+ background-position: center;
+ background-size: cover;
+
+}
+
+
+@keyframes show
+{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+
+h1 {
+  text-align: center;
+}
+
+@keyframes gif
+{
+10%{background-image:url(images/g8.gif)}
+20%{background-image:url(images/g2.gif)}
+25%{background-image:url(images/g3.gif)}
+40%{background-image:url(images/g4.gif)}
+50%{background-image:url(images/g5.gif)}
+60%{background-image:url(images/g6.gif)}
+70%{background-image:url(images/g7.gif)}
+80%{background-image:url(images/g1.gif)}
+90%{background-image:url(images/g9.gif)}
+100%{background-image:url(images/g10.gif)}
+}
+
+
+#gifbox
+{
+background:orange;
+width:60%;
+height:400px;
+margin:auto;
+box-shadow:5px 5px 5px black;
+border:5px cyan solid;
+background-image:url(g1.gif);
+background-size:100% 100%;
+top:5%;
+left:20%;
+animation:gif 25s infinite alternate;
+}
+
+
+</style>
+<body>
+<div id=gifbox> </div>
+</body>
+</html>
+
+

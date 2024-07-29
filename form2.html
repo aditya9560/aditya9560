@@ -1,0 +1,173 @@
+
+<!doctype html>
+<html>
+<head> <title> form </title>
+<a name="top">
+<center> <h1 style="background-image: linear-gradient(280deg,blue,magenta,gray);">
+
+<font color="black"><u>GAMING FORM</u></font> </h1> </center></head>
+
+ </head>
+<br/>
+
+<style>
+
+@keyframes show
+{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+html{opacity:1;
+animation: show 1s linear;}
+
+
+
+body{background-image: url("images/form2bg.jpg");
+     background-size: cover;}\ 
+     background-position: center;
+     
+}
+
+
+#main
+{
+width:100%;
+height:auto;
+border:1px black solid;
+border-radius:10px;
+margin:auto;
+padding:10px;
+box-shadow:10px 10px 10px darkcyan;
+}
+
+button:hover {   
+        opacity: 0.5;   
+    }   
+
+table{margin:auto;
+background-image: linear-gradient(280deg,blue,magenta,gray);
+}
+
+input[type=text],input[type=number],input[type=email]
+{
+width:90%;
+height:30px;
+border-radius:5px;
+color:BLUE;
+background-color: lightgrey;
+}
+
+input:focus
+{
+border:5px blue;
+}
+
+
+input:required:invalid{
+border-color:magenta;
+}
+
+input:required:valid{
+border-color:blue;
+background:#b3ffb3;
+}
+   
+textarea{background-color: lightgrey;}
+
+
+
+table:hover{}
+</style>
+
+<body>
+<div id="main"> 
+<form action="" method="post">
+
+<table border="0" cellpadding="10" cellspacing="10">
+
+<tr>
+<td><label>NAME </label> </td>
+<td><input type="text" name="user" pattern="\w{4,20}" required placeholder="First Name" title="First" > </td>
+<td><input type="text" name="user" pattern="\w{4,20}" required placeholder="Last Name" title="Last"> </td>
+</tr>
+
+
+<tr>
+<td> <label> GENDER </label> </td>
+<td><label> Male <input name="gender" type="radio" value="Male" checked></td> <td> Female <input name="gender" type="radio" value="Female"> </td><td> Others <input name="gender" type="radio" value="Other"> 
+</td>
+</tr>
+
+<tr>
+<td><label> AGE </label> </td>
+<td><input type="number" name="age" max="60" min="12" required placeholder="Type Age" title="Age"> </td>
+</tr>
+
+
+<tr>
+<td> <label> LEVEL </label> </td>
+<td><label> EASY <input name="level" type="radio" value="easy" checked></td> <td> MEDIUM <input name="level" type="radio" value="medium"> </td><td> HARD <input name="level" type="radio" value="hard"> 
+</td>
+</tr>
+
+
+<tr>
+<td><label> GAMES CATEGORIES </label> </td>
+<td>ACTION<input type="checkbox" value="action"></td>
+<td>FIGHTING<input type="checkbox" value="fight"></td>
+<td>ARCADE<input type="checkbox" value="arcade"></td>
+<td>STRATEGY<input type="checkbox" value="stra"></td>
+</td>
+</tr>
+<tr><td>E-mail</td>
+<td ><input type="email"</td></tr>
+<tr><td>Country</td>
+<td >
+<!--
+<select name="country" size="4">
+-->
+<select name="country" >
+<option value="" >Select Country</option> <option value="india" >India</option>
+<option value="usa" >Usa</option>
+<option value="uk" >Uk</option>
+<option value="Australlia" >Australlia</option>
+<option value="japan">Japan</option>
+</select>
+</td></tr>
+<tr><td>City</td>
+<td >
+<input list="mcity" id="city" name="city" />
+<datalist id="mcity">
+<option value="Delhi"></option>
+<option value="Bombay"></option>
+<option value="Calcutta"></option>
+<option value="Chenai"></option>
+<option value="Dahredun"></option>
+</datalist>
+</tr>
+<tr><td>DOB</td>
+<td><input type="date"></td>
+</tr>
+<tr><td>Time</td>
+<td><input type="time"></td>
+</tr>
+<tr><td>Upload File</td>
+<td><input type="File"></td>
+</tr>
+<tr><td>color</td>
+<td><input type="color" onchange='document.bgColor= this.value'></td>
+</tr>
+<td><label> GAMING EXPERIENCE </label> </td>
+<td><textarea cols="50" rows="10" placeholder="Type message here"></textarea></td>
+</tr>
+
+<tr>
+<td><input type="reset"> </td>
+<td><input type="submit" value="Register"> </td>
+</tr>
+
+</table>
+</form>
+</div>
+</html>

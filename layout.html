@@ -1,0 +1,160 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Responsive Layout </title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</br>
+<style>
+
+@keyframes show
+{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+#header
+{
+width:98%;
+height:300px;
+border:2px blue;
+margin:auto;
+text-align:center;
+opacity:1;
+animation: show 1s linear;
+
+}
+
+#navbar
+{
+width:90%;
+height:30px;
+border:2px #99ffdd;
+margin:auto;
+text-align:center;
+margin-top:3px
+}
+
+#main
+{
+width:100%;
+height:auto;
+border:2px green solid;
+margin:2px;
+text-align:center;
+margin-top:3px
+}
+
+
+#leftbar
+{
+width:10%;
+height:500px;
+border:2px blue solid;
+margin:2px;
+text-align:center;
+float:left;
+}
+
+#middlebar
+{
+width:70%;
+height:500px;
+border:2px blue solid;
+margin:2px;
+text-align:justify;
+float:left;
+padding:15px;
+font-size:80%;
+overflow:scroll;
+box-sizing:
+}
+
+#rightbar
+{
+width:15%;
+height:500px;
+border:2px blue solid;
+margin:2px;
+text-align:center;
+float:right;
+}
+
+#footer
+{
+width:100%;
+border:2px blue solid;
+height:250px;
+margin-top:2px;
+background:black;
+color:white;
+clear:both;
+}
+
+
+@media only screen and (max-width:600px)
+{
+
+#header{width:100%;
+height:200px;
+margin:auto;
+text-align:center;
+background:green;}
+
+#leftbar
+{width:100%;
+height:-300px;
+margin:2px;
+text-align:center;
+float:left;}
+
+#middlebar
+{width:100%;
+height:auto;
+padding:2px;
+margin:2px;
+overflow:none;}
+
+#rightbar
+{width:100%;
+height:300p;
+padding:2px;
+margin:2px;}
+
+}
+
+@media only screen and (min-width:768px)
+{
+#header
+{height:300px;
+background:green;}
+
+}
+
+@media only screen and (min-width:1200px)
+{
+#header
+{height:400px;
+width:100%;
+background:cyan;}
+
+}
+
+</style>
+
+<body>
+
+<div id="header"> </div>
+<div id="navbar"> </div>
+<div id="main"> <div id="leftbar"> </div> 
+<div id="middlebar"> </div>
+<div id="rightbar"> </div>
+<div id="footer"> </div>
+
+
+</body>
+</html>

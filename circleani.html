@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head><title></title></head>
+<h1 style="background-color:cyan;">GRADIENT ANIMATION</h1>
+<style>
+
+body  {
+  background-image: url("images/grdani.gif");
+  background-size: cover;
+  
+}
+
+
+@keyframes ani3
+{
+to{transform:rotate(0deg) scale(1) skew(Odeg, 0deg);}
+from{transform:rotate(360deg) scale(1.5) skew(2deg, 0deg);}
+}
+
+
+@keyframes ani4
+{
+10%{background-image: repeating-conic-gradient(orange 15%, #6666ff 35%, #df9f9f 30%, #b8b894 55%, #99ff99 60%); box-shadow: 5px 5px 90px cyan;
+}
+20%{background-image: repeating-conic-gradient(orange 20%, #6666ff 35%, #df9f9f 30%, #b8b894 55%, #99ff99 60%); box-shadow: 5px 5px 90px blue;
+}
+30%{background-image: repeating-conic-gradient(orange 25%, #6666ff 45%, #df9f9f 30%, #b8b894 55%, #99ff99 60%); box-shadow: 5px 5px 90px green;
+}
+40%{background-image: repeating-conic-gradient(orange 30%, #6666ff 35%, #df9f9f 30%, #b8b894 55%, #99ff99 60%); box-shadow: 5px 5px 90px red;
+}
+50%{background-image: repeating-conic-gradient(orange 35%, #6666ff 55%, #df9f9f 30%, #b8b894 55%, #99ff99 60%); box-shadow: 5px 5px 90px lime;
+}
+60%{background-image: repeating-conic-gradient(orange 40%, #6666ff 35%, #df9f9f 30%, #b8b894 55%, #99ff99 60%); box-shadow: 5px 5px 90px purple;
+}
+70%{background-image: repeating-conic-gradient(orange 45%, #6666ff 65%, #df9f9f 30%, #b8b894 55%, #99ff99 60%); box-shadow: 5px 5px 90px voilet;
+}
+80%{background-image: repeating-conic-gradient(orange 50%, #6666ff 35%, #df9f9f 30%, #b8b894 55%, #99ff99 60%); box-shadow: 5px 5px 90px coral;
+}
+90%{background-image: repeating-conic-gradient(orange 55%, #6666ff 75%, #df9f9f 30%, #b8b894 55%, #99ff99 60%); box-shadow: 5px 5px 90px yellow;
+}
+100%{background-image: repeating-conic-gradient(orange 15%, #6666ff 35%, #df9f9f 30%, #b8b894 55%, #99ff99 60%); box-shadow: 5px 5px 90px cadetblue;
+}
+
+}
+#main{
+width:300px;
+height:300px;
+background-color: red;
+margin:auto;
+margin-top:10%;
+border-radius:150px;
+background-image: repeating-conic-gradient(orange 15%, #6666ff 35%, #df9f9f 30%, #b8b894 55%, #99ff99 60%); box-shadow: 5px 5px 90px cyan;
+animation: ani4 1s linear infinite alternate, ani3 1s linear infinite alternate;
+}
+</style>
+<body bgColor="black">
+<div id="main">
+
+</div>
+</body>
+</html>

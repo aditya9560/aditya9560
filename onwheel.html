@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.pic{
+    width: 500px;
+    height: 500px;
+    box-shadow:10px 10px 10px rgb(67, 21, 2);
+    cursor: zoom-in;
+    display:block;
+    margin:auto;
+    transition:0.50s;
+
+}
+#myslider
+{
+    position: relative;
+    top:300px;
+    left:160px;
+
+}
+body{
+        background-image: linear-gradient(to right, rgb(233, 185, 133), rgb(67, 21, 2));
+    }
+</style>
+<body>
+    <h1 style="color: sienna;background-color: aliceblue;text-align: center;">ON WHEEL</h1>
+
+<div id ="box" style="margin:auto;width:50%;height:300px;border:0px black solid;">
+
+<script>
+    var b= document.getElementById("box")
+
+    var p= document.createElement("img")
+
+    b.appendChild(p)
+    p.src="images/onwheel.jpg"
+    p.style.width="100px"
+    p.style.height="100px"
+    p.classList.add("pic")
+    document.title= "no error"
+
+    var w = 100
+    p.onwheel= function(event)
+    {
+       // alert(event.deltaY)
+        if((event.deltaY == 200)&&(w<550))
+        {
+            w=w+5
+            document.title = w 
+            p.style.width= w+"px"
+            p.style.height= w+"px"
+        }
+
+
+        if((event.deltaY == -200)&&(w>100))
+        {
+            w=w-5
+            document.title = w
+            p.style.width= w+"px"
+            p.style.height=w+"px"
+
+        }
+    }
+</script>    
+</div>
+
+</html>

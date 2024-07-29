@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .pic
+    {
+        width:200px;
+        height:200px;
+        margin:20px;
+        box-shadow:10px 10px 10px gray;
+    }
+    .mystyle
+    {
+        margin:60px;
+        transition:1.00s;
+        transform:scale(1.5)  rotateZ(360deg) rotateY(360deg) skewY(2deg);
+    }
+
+</style>
+<body>
+    <H1 style='font-size:30px;color: rgb(83, 140, 181)'>CHOOSE YOUR CHARACTER</H1>
+     <img id="mypic" src="images/a1 (1).jpg" class="pic">
+     <script>
+        window.document.bgColor="#00004d"
+    var p = document.getElementById("mypic")
+    var n = 1
+    p.onclick = function()
+    {
+    if(n<8)
+    {
+        n++
+    }
+    else
+    {
+        n=1
+    }
+document.title = n
+ p.src = "images/a1 ("+n+").jpg"
+p.classList.add("mystyle")
+}
+
+p.onmousemove = function()
+{
+    p.classList.remove("mystyle")
+}
+document.title="no error"
+
+</script> 
+</body>
+</html>

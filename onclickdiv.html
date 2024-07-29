@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .headstyle
+    {
+        width:100%;
+        box-shadow:10px 10px 10px gray;
+        color:rgb(128, 0, 0);
+        transition:0.50s;
+        cursor:pointer;
+    }
+
+    .datastyle
+    {
+        width:auto;
+        height:0px;
+        box-shadow:10px 10px 10px gray;
+        color:rgb(240, 151, 151);
+        transition:1.50s;
+        border:1px solid black;
+        padding:0px;
+        text-align:justify;
+        overflow:hidden;
+
+
+    }
+    .show
+    {
+        overflow:visible;
+        height:auto;
+        background:rgb(9, 0, 128);
+        padding:70px;
+        text-align:justify;
+        border-radius:40%;
+
+    }
+    span{
+        size: 500px;
+    }
+</style>
+
+<body>
+<h1 id="heading1">ABOUT GAMING</h1>    
+<p id="about">
+<span id="closebutton" style="cursor:pointer;padding:5px;margin-left:90px;width:100%; ">
+  <b> &#10062;</b> 
+</span>
+<br/><br/><br/>
+
+Gaming refers to the activity of playing electronic games, typically through devices such as computers, consoles (like PlayStation or Xbox), handheld devices (such as Nintendo Switch or mobile phones), or even dedicated gaming rigs. It has evolved significantly from simple pixelated games to immersive, high-definition experiences with complex narratives, multiplayer capabilities, and realistic graphics.
+Online gaming refers to playing video games over the internet, either cooperatively with other players or competitively against them. This mode of gaming has become increasingly popular due to the widespread availability of high-speed internet and the development of multiplayer features in games. <br/>
+
+Overall, gaming is a dynamic and diverse form of entertainment that continues to evolve with advancements in technology and player preferences.
+</p>
+<script>
+window.document.bgColor="#b3b3ff"
+
+    var a= document.getElementById("heading1")
+    var b= document.getElementById("about")
+    var c= document.getElementById("closebutton")
+
+    c.onclick = function()
+    {
+        b.classList.remove("show")
+    }
+    a.onmouseover =function()
+    {
+        a.classList.add("headstyle")
+    }
+    a.onmouseout = function()
+    {
+        a.classList.remove("headstyle")
+            //b.classList.remove("show")
+    }
+    b.classList.add("datastyle")
+
+    a.onclick = function()
+    {
+        b.classList.add("show")
+
+        }
+</script>
+</body>
+</html>

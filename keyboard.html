@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #mycar
+    {
+        width:20%;
+        transform:rotateY(180deg);
+        position:absolute;
+        top:0px;
+        left:10px;
+        
+
+    }
+    body{
+        background-image: url(images/keybg.gif);
+    }
+</style>
+
+<body>
+<img id ="mycar" src="images/plane.gif">
+<script>
+    var car = document.getElementById("mycar")
+    var k;
+    var l = 10
+    var t= 0
+    var r = 0
+    var speed = 10
+    function action(event)
+    {
+       // alert(event.keyCode)
+    k = event.keyCode
+    /* right arrow */
+    if(k==39)
+    {
+        l+=speed
+        car.style.left = l+"px"
+        car.style.transform="rotateY(360deg)";
+    }
+
+
+
+
+    /* left arrow*/
+    if(k==37)
+    {
+        car.style.transform="rotateY(-180deg)";
+        l-=speed
+        car.style.left = l+"px"
+
+    }
+    /*small s for speed*/
+    if ((k==83)&&(speed<=50))
+    {
+        speed+=1
+        document.title = speed
+    }
+
+    if ((k==68)&&(speed>=10))
+    {
+        speed-=1
+        document.title = speed
+    }
+    /*down arrow key 40 */
+    if(k==40)
+    {
+        t+=speed
+        car.style.top = t+"px"
+
+    }
+
+    if(k==38)
+    {
+             t-=speed
+             car.style.top = t+"px "
+    }
+    if(k==82)
+    {
+        r+=5
+        car.style.transform="rotate("+r+"deg)"
+    }
+    }
+    document.body.addEventListener("keydown",action)
+</script>   
+</body>
+</html>

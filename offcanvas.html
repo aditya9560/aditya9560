@@ -3,31 +3,99 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>nav bar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
   </head>
   <body>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  
    
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-      Button with data-bs-target
-    </button>
     
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header bg-secondary">
         <h5 class="offcanvas-title " id="offcanvasExampleLabel">Hello! sign in</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
-        <div><b>Trending</b></div>
-        <li><a href="#">Best Seller</a></li>
+        <div><h4><b>Trending</b></h4></div>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">New releases</a></li>
+        <li><a href="#">Movers and Shakers</a></li>
+<hr>
+<div><h4><b>Digital Content and Devices</b></h4></div>
+<li><a href="#">Amazon miniTV</a></li>
+<li><a href="#">Echo & Alexa</a></li>
+<li><a href="#">Amazon Prime Video</a></li>
+<li><a href="#">Fire TV </a></li>
+<li><a href="#">Audible Audiobooks </a></li>
+<hr>
+<div><h4><b>Shop by Category</b></h4></div>
+<li><a href="#">Mobiles, Computers</a></li>
+<li><a href="#">TV,Appliance,Electronics</a></li>
+<li><a href="#">Men's Fashion</a></li>
+<li><a href="#">Womens's Fashions </a></li>
+<li><a href="#">See all </a></li>
+<hr>
+<div><h4><b>Programs & Features</b></h4></div>
+<li><a href="#">Amazon Pay</a></li>
+<li><a href="#">Gifts Cards & Mobile Recharges</a></li>
+<li><a href="#">Amazon Business</a></li>
+<li><a href="#">Amazon Launchpad</a></li>
+<li><a href="#">See all </a></li>
+<hr>
+<div><h4><b>Help & Settings</b></h4></div>
+<li><a href="#">Yours Accounts</a></li>
+<li><a href="#">customer Service </a></li>
+<li><a href="#">Sign in</a></li>
+<hr>
 
-     
         </div>
       </div>
     </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <img src="images/list.svg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+        
+            </button>
+            <img src="images/amazon.svg" alt="" width="50" height="44" class="d-inline-block align-text-top">
+            Amazon
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers">Best sellers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.amazon.in/minitv?ref_=nav_avod_desktop_topnav">Amazon miniTV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.amazon.in/deals?ref_=nav_cs_gb&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522">Today's Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles">Mobiles</a>
+              </li>
+            </ul>
+            <form class="d-flex position-absolute top-20 start-50">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">
+                <img src="images/search.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
 
 
 </body>
